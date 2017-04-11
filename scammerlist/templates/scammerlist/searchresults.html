@@ -1,0 +1,7 @@
+{{ results_text }}<br>
+
+{% for people in results %}
+    {{ people.name }}
+{% endfor %}
+
+<a href="{% url 'index' %}">home</a>
