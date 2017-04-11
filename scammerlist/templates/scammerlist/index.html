@@ -8,7 +8,7 @@
 {# ------ LIST FOR CATALOG ------ #}
 <ul>
 {% for a in catalog %}
-    <li>{{ a }}</li>
+    <li><a href="list/{{a.id}}">{{ a }}</a></li>
 {% endfor %}
 </ul>
 

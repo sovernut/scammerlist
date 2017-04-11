@@ -13,7 +13,7 @@ class Person(models.Model):
     catalog = models.ForeignKey(Catalog, on_delete=models.CASCADE)
     name = models.CharField(max_length=200)
     email = models.CharField(max_length=200)
-    mobile_number = models.IntegerField(default=0)
+    mobile_number = models.CharField(max_length=10)
     detail = models.CharField(max_length=400)
 
     def __str__(self):
