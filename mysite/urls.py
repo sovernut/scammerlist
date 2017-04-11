@@ -16,7 +16,10 @@ Including another URLconf
 from django.conf.urls import url,include
 from django.contrib import admin
 
+from scammerlist import views
+
 urlpatterns = [
-    url(r'^scammer/', include('scammerlist.urls')),
+    url(r'^$',views.index, name='index'),
+    #url(r'^$', include('scammerlist.urls')),
     url(r'^admin/', admin.site.urls),
 ]
