@@ -1,0 +1,60 @@
+1491882599259	geckodriver	INFO	Listening on 127.0.0.1:51253
+1491882600338	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.jdO7gzsu2ZWP
+1491882600338	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox
+1491882600340	geckodriver::marionette	INFO	Connecting to Marionette on localhost:43491
+1491882600660	addons.xpi	WARN	Add-on langpack-en-GB@firefox.mozilla.org is not compatible with application version.
+1491882600661	addons.xpi	WARN	Add-on langpack-en-GB@firefox.mozilla.org is not compatible with application version.
+1491882600675	addons.xpi	WARN	Add-on langpack-en-ZA@firefox.mozilla.org is not compatible with application version.
+1491882600676	addons.xpi	WARN	Add-on langpack-en-ZA@firefox.mozilla.org is not compatible with application version.
+1491882601000	Marionette	INFO	Listening on port 43491
+1491882601194	addons.xpi	WARN	Add-on langpack-en-GB@firefox.mozilla.org is not compatible with application version.
+1491882601195	addons.xpi	WARN	Add-on langpack-en-ZA@firefox.mozilla.org is not compatible with application version.
+1491882601198	addons.xpi	WARN	Add-on langpack-en-GB@firefox.mozilla.org is not compatible with application version.
+1491882601199	addons.xpi	WARN	Add-on langpack-en-ZA@firefox.mozilla.org is not compatible with application version.
+[Child 6656] ###!!! ABORT: Aborting on channel error.: file /build/firefox-z5GTBX/firefox-51.0.1+build2/ipc/glue/MessageChannel.cpp, line 2056
+[Child 6656] ###!!! ABORT: Aborting on channel error.: file /build/firefox-z5GTBX/firefox-51.0.1+build2/ipc/glue/MessageChannel.cpp, line 2056
+1491882632948	geckodriver	INFO	Listening on 127.0.0.1:42859
+1491882634089	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.rE0nvcPlZuyJ
+1491882634090	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox
+1491882634091	geckodriver::marionette	INFO	Connecting to Marionette on localhost:46755
+1491882634394	addons.xpi	WARN	Add-on langpack-en-GB@firefox.mozilla.org is not compatible with application version.
+1491882634395	addons.xpi	WARN	Add-on langpack-en-GB@firefox.mozilla.org is not compatible with application version.
+1491882634409	addons.xpi	WARN	Add-on langpack-en-ZA@firefox.mozilla.org is not compatible with application version.
+1491882634409	addons.xpi	WARN	Add-on langpack-en-ZA@firefox.mozilla.org is not compatible with application version.
+1491882634752	Marionette	INFO	Listening on port 46755
+1491882634954	addons.xpi	WARN	Add-on langpack-en-GB@firefox.mozilla.org is not compatible with application version.
+1491882634955	addons.xpi	WARN	Add-on langpack-en-ZA@firefox.mozilla.org is not compatible with application version.
+1491882634960	addons.xpi	WARN	Add-on langpack-en-GB@firefox.mozilla.org is not compatible with application version.
+1491882634960	addons.xpi	WARN	Add-on langpack-en-ZA@firefox.mozilla.org is not compatible with application version.
+[Child 6773] ###!!! ABORT: Aborting on channel error.: file /build/firefox-z5GTBX/firefox-51.0.1+build2/ipc/glue/MessageChannel.cpp, line 2056
+[Child 6773] ###!!! ABORT: Aborting on channel error.: file /build/firefox-z5GTBX/firefox-51.0.1+build2/ipc/glue/MessageChannel.cpp, line 2056
+1491882653228	geckodriver	INFO	Listening on 127.0.0.1:46497
+1491882654378	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.t4QURouoLFR3
+1491882654378	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox
+1491882654380	geckodriver::marionette	INFO	Connecting to Marionette on localhost:33007
+1491882654688	addons.xpi	WARN	Add-on langpack-en-GB@firefox.mozilla.org is not compatible with application version.
+1491882654689	addons.xpi	WARN	Add-on langpack-en-GB@firefox.mozilla.org is not compatible with application version.
+1491882654703	addons.xpi	WARN	Add-on langpack-en-ZA@firefox.mozilla.org is not compatible with application version.
+1491882654704	addons.xpi	WARN	Add-on langpack-en-ZA@firefox.mozilla.org is not compatible with application version.
+1491882655032	Marionette	INFO	Listening on port 33007
+1491882655207	addons.xpi	WARN	Add-on langpack-en-GB@firefox.mozilla.org is not compatible with application version.
+1491882655208	addons.xpi	WARN	Add-on langpack-en-ZA@firefox.mozilla.org is not compatible with application version.
+1491882655212	addons.xpi	WARN	Add-on langpack-en-GB@firefox.mozilla.org is not compatible with application version.
+1491882655212	addons.xpi	WARN	Add-on langpack-en-ZA@firefox.mozilla.org is not compatible with application version.
+[Child 6883] ###!!! ABORT: Aborting on channel error.: file /build/firefox-z5GTBX/firefox-51.0.1+build2/ipc/glue/MessageChannel.cpp, line 2056
+[Child 6883] ###!!! ABORT: Aborting on channel error.: file /build/firefox-z5GTBX/firefox-51.0.1+build2/ipc/glue/MessageChannel.cpp, line 2056
+1491882666379	geckodriver	INFO	Listening on 127.0.0.1:47097
+1491882667506	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.eJJZjiX9g799
+1491882667506	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox
+1491882667508	geckodriver::marionette	INFO	Connecting to Marionette on localhost:36375
+1491882667830	addons.xpi	WARN	Add-on langpack-en-GB@firefox.mozilla.org is not compatible with application version.
+1491882667831	addons.xpi	WARN	Add-on langpack-en-GB@firefox.mozilla.org is not compatible with application version.
+1491882667845	addons.xpi	WARN	Add-on langpack-en-ZA@firefox.mozilla.org is not compatible with application version.
+1491882667846	addons.xpi	WARN	Add-on langpack-en-ZA@firefox.mozilla.org is not compatible with application version.
+1491882668202	Marionette	INFO	Listening on port 36375
+1491882668383	addons.xpi	WARN	Add-on langpack-en-GB@firefox.mozilla.org is not compatible with application version.
+1491882668384	addons.xpi	WARN	Add-on langpack-en-ZA@firefox.mozilla.org is not compatible with application version.
+1491882668387	addons.xpi	WARN	Add-on langpack-en-GB@firefox.mozilla.org is not compatible with application version.
+1491882668388	addons.xpi	WARN	Add-on langpack-en-ZA@firefox.mozilla.org is not compatible with application version.
+[Child 7000] ###!!! ABORT: Aborting on channel error.: file /build/firefox-z5GTBX/firefox-51.0.1+build2/ipc/glue/MessageChannel.cpp, line 2056
+[Child 7000] ###!!! ABORT: Aborting on channel error.: file /build/firefox-z5GTBX/firefox-51.0.1+build2/ipc/glue/MessageChannel.cpp, line 2056
