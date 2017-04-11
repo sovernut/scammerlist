@@ -1,0 +1,14 @@
+<title>Search for scammer</title>
+{# SEARCH BOX #}
+<form method="get" action="/results/">
+<input type="text" id="searchBox" name="search_name" placeholder="Enter name">
+<input type="submit" id="sub_btn" value="Search" >
+</form>
+
+{# ------ LIST FOR CATALOG ------ #}
+<ul>
+{% for a in catalog %}
+    <li>{{ a }}</li>
+{% endfor %}
+</ul>
+
