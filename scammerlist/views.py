@@ -1,4 +1,4 @@
-from django.shortcuts import render , get_object_or_404
+from django.shortcuts import redirect, render , get_object_or_404
 from django.http import HttpResponse
 from .models import Person,Catalog 
 
@@ -30,4 +30,16 @@ def persondetail(request,person_id):
     
 def addperson(request):
     catalog_all = Catalog.objects.order_by('-type_cat')
+    if request.method == 'POST':
+        catalog_id = int(request.POST['catalog']) # convert string ot int
+        catalog = get_object_or_404(Catalog,pk=catalog_id)
+        catalog.person_set.create(
+            name=request.POST['name'],
+            email=request.POST['email'],
+            mobile_number=request.POST['mobile'],
+            detail=request.POST['detail'],
+            )
+        catalog.save()
+        print("OK")
+        return redirect('/')
     return render(request,"scammerlist/add.html",{"catalog_all":catalog_all})

@@ -1,9 +1,10 @@
 <title>adding scammer</title>
-<form method="get" action="/search">
+<form method="post" action="{% url 'addperson' %}">
+{% csrf_token %}
 {# catalog BOX #}
-<select>
+<select name="catalog">
 {% for a in catalog_all %}
-    <option value="{{ a }}">{{ a }}</option>
+    <option value="{{ a.id }}">{{ a }}</option>
 {% endfor %}
 </select><br>
 {# end catalog BOX #}
