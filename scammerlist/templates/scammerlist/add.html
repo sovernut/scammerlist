@@ -1,0 +1,19 @@
+<title>adding scammer</title>
+<form method="get" action="/search">
+{# catalog BOX #}
+<select>
+{% for a in catalog_all %}
+    <option value="{{ a }}">{{ a }}</option>
+{% endfor %}
+</select><br>
+{# end catalog BOX #}
+<input type="text" id="name" name="name" placeholder="name"><br>
+<input type="email" id="email" name="email" placeholder="xx@xx.com"><br>
+<input type="number" id="mobile" name="mobile" placeholder="ex. 089xxxxxxx"><br>
+<input type="text" id="detail" name="detail" placeholder="รายล
+ะเอียดการโกง"><br>
+<input type="submit" id="add_btn" value="Add" >
+</form>
+<br>
+<a href="{% url 'index' %}">home</a>
+

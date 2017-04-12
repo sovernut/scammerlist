@@ -27,3 +27,7 @@ def listname(request,catalog_id):
 def persondetail(request,person_id):
     person = get_object_or_404(Person,pk=person_id)
     return render(request,"scammerlist/detail_sub.html",{"person":person})
+    
+def addperson(request):
+    catalog_all = Catalog.objects.order_by('-type_cat')
+    return render(request,"scammerlist/add.html",{"catalog_all":catalog_all})

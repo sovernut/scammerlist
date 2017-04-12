@@ -23,6 +23,7 @@ urlpatterns = [
     url(r'^search$', views.search, name='search'),
     url(r'^list/(?P<catalog_id>[0-9]+)$', views.listname, name='listname'),
     url(r'^detail/(?P<person_id>[0-9]+)$', views.persondetail, name='person_de'),
+    url(r'^add_p$', views.addperson, name='addperson'),
     #url(r'^$', include('scammerlist.urls')),
     url(r'^admin/', admin.site.urls),
 ]
