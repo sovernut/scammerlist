@@ -1,8 +1,9 @@
 <title>Scammer</title>
 
 {# show all name #}
-{% for people in catalog %}
-    <li>{{ people.name }}{{ people.email }}{{ people.mobile_number }}</li>
+{% for people in catalog.person_set.all %}
+    <li><a href="{% url 'person_de' people.id %}">{{ people.name }}</a></li>
 {% endfor %}
 
-
+<br>
+<a href="{% url 'index' %}">home</a>

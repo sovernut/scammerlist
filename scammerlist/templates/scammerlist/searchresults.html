@@ -1,7 +1,7 @@
 {{ results_text }}<br>
 
 {% for people in results %}
-    {{ people.name }}
+    <a href="{% url 'person_de' people.id %}">{{ people.name }} ({{ people.catalog }})</a><br>
 {% endfor %}
-
+<br>
 <a href="{% url 'index' %}">home</a>

@@ -22,5 +22,8 @@ def search(request):
     
 def listname(request,catalog_id):
     catalog = get_object_or_404(Catalog,pk=catalog_id)
-    catalog = catalog.person_set.all()
     return render(request,"scammerlist/detail.html",{"catalog":catalog})
+    
+def persondetail(request,person_id):
+    person = get_object_or_404(Person,pk=person_id)
+    return render(request,"scammerlist/detail_sub.html",{"person":person})
