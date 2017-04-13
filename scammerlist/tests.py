@@ -1,6 +1,7 @@
 from django.core.urlresolvers import resolve
 from django.test import TestCase
 from scammerlist.views import index
+from scammerlist.models import Catalog,Person
 
 class HomePageTest(TestCase):
 

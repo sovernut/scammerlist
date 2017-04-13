@@ -1,16 +1,48 @@
+<head>
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+</head>
+
+<!-- **************START NAVBAR************** -->
+<nav class="navbar navbar-primary">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">ScammerSearcg</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="{% url 'addperson' %}">Add Person</a></li>
+    </ul>
+  </div>
+</nav>
+<!-- **************STOP NAVBAR************** -->
+
+<div class="container-fluid">
 <title>Search for scammer</title>
-{# add page #}
-<a href="{% url 'addperson' %}">Add</a>
-{# SEARCH BOX #}
+{# ------------add page------------ #}
+<h1>Search for scammer</h1>
+{# ----------SEARCH BOX--------------- #}
+<div class="alert alert-info" role="alert">
+    <strong>Info !</strong> Search for scammer here.
+</div>
 <form method="get" action="/search">
-<input type="text" id="searchBox" name="search_name" placeholder="Enter name">
-<input type="submit" id="sub_btn" value="Search" >
-</form>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6">
+      <input type="text" id="searchBox" class="form-control" name="search_name" placeholder="Enter name">
+    </div>
+    <div class="col-sm-2">
+      <input type="submit" id="sub_btn" value="Search" >
+    </div>
+  </div>
+</div>
 
 {# ------ LIST FOR CATALOG ------ #}
+<h1>Select Catalog</h1>
 <ul>
 {% for a in catalog %}
     <li><a href="list/{{a.id}}">{{ a }}</a></li>
 {% endfor %}
 </ul>
+</div>
 
