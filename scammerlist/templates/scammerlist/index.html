@@ -1,18 +1,19 @@
+{% load static %}
+
 <head>
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+<title>Scammer List</title>
+<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+<link rel="stylesheet" href="{% static 'css/bootstrap-theme.min.css' %}">
 </head>
 
 <!-- **************START NAVBAR************** -->
-<nav class="navbar navbar-primary">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">ScammerSearcg</a>
+<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+  <a class="navbar-brand" href="{% url 'index' %}">Scammer</a>
+  <div class="collapse navbar-collapse">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link active" href="{% url 'index' %}">Home <span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link" href="{% url 'addperson' %}">Add person</a>
     </div>
-    <ul class="nav navbar-nav">
-      <li class="active"><a href="#">Home</a></li>
-      <li><a href="{% url 'addperson' %}">Add Person</a></li>
-    </ul>
   </div>
 </nav>
 <!-- **************STOP NAVBAR************** -->
@@ -27,22 +28,22 @@
 </div>
 <form method="get" action="/search">
 <div class="container">
-  <div class="row">
-    <div class="col-sm-6">
-      <input type="text" id="searchBox" class="form-control" name="search_name" placeholder="Enter name">
+      <div class="row">
+        <div class="col-sm-6">
+          <input type="text" id="searchBox" class="form-control" name="search_name" placeholder="Enter name">
+        </div>
+        <div class="col-sm-2">
+          <input type="submit" id="sub_btn" value="Search" >
+        </div>
+      </div>
     </div>
-    <div class="col-sm-2">
-      <input type="submit" id="sub_btn" value="Search" >
-    </div>
-  </div>
-</div>
 
-{# ------ LIST FOR CATALOG ------ #}
-<h1>Select Catalog</h1>
-<ul>
-{% for a in catalog %}
-    <li><a href="list/{{a.id}}">{{ a }}</a></li>
-{% endfor %}
-</ul>
+    {# ------ LIST FOR CATALOG ------ #}
+    <h1>Select Catalog</h1>
+    <ul>
+    {% for a in catalog %}
+        <li><a href="list/{{a.id}}">{{ a }}</a></li>
+    {% endfor %}
+    </ul>
 </div>
 
