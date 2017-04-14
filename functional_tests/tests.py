@@ -14,9 +14,9 @@ class NewVisitorTest(unittest.TestCase): # test in existing database
     def tearDown(self):
         self.browser.quit()
 
-    def test_title(self):
+    def test_title_and_search_box(self):
         self.browser.get('http://localhost:8000') # open app
-        self.assertIn('scammer', self.browser.title)
+        self.assertIn('Scammer', self.browser.title)
         
         searchbox = self.browser.find_element_by_id('searchBox')
         self.assertEqual(
@@ -25,13 +25,11 @@ class NewVisitorTest(unittest.TestCase): # test in existing database
         )
         searchbox.send_keys('X')
         searchbox.send_keys(Keys.ENTER)
-        time.sleep(2)
-        table = self.browser.find_element_by_id('result_table')
-        rows = table.find_elements_by_tag_name('td')
+        time.sleep(1)
+        table = self.browser.find_element_by_id('result_ul')
+        rows = table.find_elements_by_tag_name('li')
         self.assertIn('X (ขายเกม)', [row.text for row in rows])
-        
-        
-        self.fail('Finish the test!')
+   
 
 
 

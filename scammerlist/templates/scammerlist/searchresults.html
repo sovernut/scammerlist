@@ -20,9 +20,9 @@
 
 <div class="container">
 <h3>{{ results_text }}</h3><br>
-<ul>
+<ul id="result_ul">
 {% for people in results %}
-    <li><td><a href="{% url 'person_de' people.id %}">{{ people.name }} ({{ people.catalog }})</a></li>
+    <li><a href="{% url 'person_de' people.id %}">{{ people.name }} ({{ people.catalog }})</a></li>
 {% endfor %}
 </ul>
 </div>

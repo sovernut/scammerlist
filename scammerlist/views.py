@@ -33,6 +33,7 @@ def addperson(request):
     if request.method == 'POST':
         catalog_id = int(request.POST['catalog']) # convert string ot int
         catalog = get_object_or_404(Catalog,pk=catalog_id)
+        print(catalog_id)
         catalog.person_set.create(
             name=request.POST['name'],
             email=request.POST['email'],
@@ -41,5 +42,5 @@ def addperson(request):
             )
         catalog.save()
         print("OK")
-        return redirect('/')
+        return redirect('/') # redirect to homepage
     return render(request,"scammerlist/add.html",{"catalog_all":catalog_all})
