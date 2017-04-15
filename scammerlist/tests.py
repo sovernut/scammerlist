@@ -54,3 +54,22 @@ class HomePageTest(TestCase):
         self.assertEqual(response.status_code, 302) # redirect code
         self.assertEqual(response['location'], '/') # redirect to home page '/'
         
+class PersonModelTest(TestCase):
+
+    def test_saving_and_retrieving_person(self):
+        c = Catalog.objects.create(type_cat='some catalog')
+        
+        person1 = c.person_set.create(name='First',email='null',mobile_number='null',detail='null')
+        person1.save()
+
+        person2 = c.person_set.create(name='Second',email='null',mobile_number='null',detail='null')
+        person2.save()
+
+        saved_people = Person.objects.all()
+        self.assertEqual(saved_people.count(), 2)
+
+        first_person = saved_people[0]
+        second_person = saved_people[1]
+        self.assertEqual(first_person.name, 'First')
+        self.assertEqual(second_person.name, 'Second')
+        
