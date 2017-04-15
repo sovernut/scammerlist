@@ -1017,3 +1017,474 @@
 
 ###!!! [Child][MessageChannel] Error: (msgtype=0x3E0003,name=PCompositable::Msg_Destroy) Channel error: cannot send/recv
 
+1492220991095	geckodriver	INFO	Listening on 127.0.0.1:35013
+1492220992209	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.UQuG4Ukoc5tl
+1492220992210	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox
+1492220992212	geckodriver::marionette	INFO	Connecting to Marionette on localhost:39333
+1492220992933	Marionette	INFO	Listening on port 39333
+1492220993686	Marionette	WARN	TLS certificate errors will be ignored for this session
+1492220995262	geckodriver	INFO	Listening on 127.0.0.1:39593
+1492220996433	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.vOxF7x4MydwN
+1492220996433	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox
+1492220996435	geckodriver::marionette	INFO	Connecting to Marionette on localhost:43239
+1492220997267	Marionette	INFO	Listening on port 43239
+1492220998289	Marionette	WARN	TLS certificate errors will be ignored for this session
+1492221157801	geckodriver	INFO	Listening on 127.0.0.1:41461
+1492221158876	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.L5FxIuM0Kg4H
+1492221158876	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox
+1492221158878	geckodriver::marionette	INFO	Connecting to Marionette on localhost:35459
+1492221159544	Marionette	INFO	Listening on port 35459
+1492221160315	Marionette	WARN	TLS certificate errors will be ignored for this session
+1492221161781	geckodriver	INFO	Listening on 127.0.0.1:47303
+1492221162858	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.U1bYoVZdG3Wj
+1492221162858	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox
+1492221162860	geckodriver::marionette	INFO	Connecting to Marionette on localhost:37197
+1492221163663	Marionette	INFO	Listening on port 37197
+1492221164665	Marionette	WARN	TLS certificate errors will be ignored for this session
+1492221269806	geckodriver	INFO	Listening on 127.0.0.1:50747
+1492221270977	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.HI9TXoGWOlyu
+1492221270978	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox
+1492221270980	geckodriver::marionette	INFO	Connecting to Marionette on localhost:41087
+1492221271626	Marionette	INFO	Listening on port 41087
+1492221272707	Marionette	WARN	TLS certificate errors will be ignored for this session
+1492221275897	Marionette	INFO	New connections will no longer be accepted
+[Child 3641] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-bLMGaO/firefox-52.0.2+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 322
+[Child 3641] ###!!! ABORT: Aborting on channel error.: file /build/firefox-bLMGaO/firefox-52.0.2+build1/ipc/glue/MessageChannel.cpp, line 2143
+[Child 3641] ###!!! ABORT: Aborting on channel error.: file /build/firefox-bLMGaO/firefox-52.0.2+build1/ipc/glue/MessageChannel.cpp, line 2143
+
+###!!! [Child][MessageChannel] Error: (msgtype=0xE40003,name=PTexture::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x3E0003,name=PCompositable::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x3E0003,name=PCompositable::Msg_Destroy) Channel error: cannot send/recv
+
+1492221275951	geckodriver	INFO	Listening on 127.0.0.1:39685
+1492221277097	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.XszE53OFHRNa
+1492221277097	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox
+1492221277100	geckodriver::marionette	INFO	Connecting to Marionette on localhost:39579
+1492221277845	Marionette	INFO	Listening on port 39579
+1492221278614	Marionette	WARN	TLS certificate errors will be ignored for this session
+1492221282918	Marionette	INFO	New connections will no longer be accepted
+[Child 3759] ###!!! ABORT: Aborting on channel error.: file /build/firefox-bLMGaO/firefox-52.0.2+build1/ipc/glue/MessageChannel.cpp, line 2143
+[Child 3759] ###!!! ABORT: Aborting on channel error.: file /build/firefox-bLMGaO/firefox-52.0.2+build1/ipc/glue/MessageChannel.cpp, line 2143
+1492221393382	geckodriver	INFO	Listening on 127.0.0.1:49689
+1492221394551	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.IDUxQ3LBPIb1
+1492221394552	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox
+1492221394554	geckodriver::marionette	INFO	Connecting to Marionette on localhost:32819
+1492221395278	Marionette	INFO	Listening on port 32819
+1492221396053	Marionette	WARN	TLS certificate errors will be ignored for this session
+1492221399153	Marionette	INFO	New connections will no longer be accepted
+[Child 3907] ###!!! ABORT: Aborting on channel error.: file /build/firefox-bLMGaO/firefox-52.0.2+build1/ipc/glue/MessageChannel.cpp, line 2143
+[Child 3907] ###!!! ABORT: Aborting on channel error.: file /build/firefox-bLMGaO/firefox-52.0.2+build1/ipc/glue/MessageChannel.cpp, line 2143
+
+###!!! [Child][MessageChannel] Error: (msgtype=0xE40003,name=PTexture::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0xE40003,name=PTexture::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x3E0003,name=PCompositable::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x3E0003,name=PCompositable::Msg_Destroy) Channel error: cannot send/recv
+
+1492221399213	geckodriver	INFO	Listening on 127.0.0.1:46467
+1492221400378	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.lCptwDCTO6Fe
+1492221400379	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox
+1492221400381	geckodriver::marionette	INFO	Connecting to Marionette on localhost:46645
+1492221401040	Marionette	INFO	Listening on port 46645
+1492221401904	Marionette	WARN	TLS certificate errors will be ignored for this session
+1492221406087	Marionette	INFO	New connections will no longer be accepted
+[Child 4028] ###!!! ABORT: Aborting on channel error.: file /build/firefox-bLMGaO/firefox-52.0.2+build1/ipc/glue/MessageChannel.cpp, line 2143
+[Child 4028] ###!!! ABORT: Aborting on channel error.: file /build/firefox-bLMGaO/firefox-52.0.2+build1/ipc/glue/MessageChannel.cpp, line 2143
+1492221437844	geckodriver	INFO	Listening on 127.0.0.1:35917
+1492221438921	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.PbDMV77x44aF
+1492221438921	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox
+1492221438923	geckodriver::marionette	INFO	Connecting to Marionette on localhost:44397
+1492221439561	Marionette	INFO	Listening on port 44397
+1492221440434	Marionette	WARN	TLS certificate errors will be ignored for this session
+1492221443591	Marionette	INFO	New connections will no longer be accepted
+[Child 4148] ###!!! ABORT: Aborting on channel error.: file /build/firefox-bLMGaO/firefox-52.0.2+build1/ipc/glue/MessageChannel.cpp, line 2143
+[Child 4148] ###!!! ABORT: Aborting on channel error.: file /build/firefox-bLMGaO/firefox-52.0.2+build1/ipc/glue/MessageChannel.cpp, line 2143
+
+###!!! [Child][MessageChannel] Error: (msgtype=0xE40003,name=PTexture::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x3E0003,name=PCompositable::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x3E0003,name=PCompositable::Msg_Destroy) Channel error: cannot send/recv
+
+1492221443631	geckodriver	INFO	Listening on 127.0.0.1:54887
+1492221444805	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.GhPkh66AwKkI
+1492221444805	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox
+1492221444808	geckodriver::marionette	INFO	Connecting to Marionette on localhost:44917
+1492221445470	Marionette	INFO	Listening on port 44917
+1492221446236	Marionette	WARN	TLS certificate errors will be ignored for this session
+1492221450546	Marionette	INFO	New connections will no longer be accepted
+[Child 4271] ###!!! ABORT: Aborting on channel error.: file /build/firefox-bLMGaO/firefox-52.0.2+build1/ipc/glue/MessageChannel.cpp, line 2143
+[Child 4271] ###!!! ABORT: Aborting on channel error.: file /build/firefox-bLMGaO/firefox-52.0.2+build1/ipc/glue/MessageChannel.cpp, line 2143
+1492221473795	geckodriver	INFO	Listening on 127.0.0.1:37039
+1492221474930	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.XAwpec6ZhTp3
+1492221474931	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox
+1492221474933	geckodriver::marionette	INFO	Connecting to Marionette on localhost:35281
+1492221475607	Marionette	INFO	Listening on port 35281
+1492221476378	Marionette	WARN	TLS certificate errors will be ignored for this session
+1492221479686	Marionette	INFO	New connections will no longer be accepted
+[Child 4399] ###!!! ABORT: Aborting on channel error.: file /build/firefox-bLMGaO/firefox-52.0.2+build1/ipc/glue/MessageChannel.cpp, line 2143
+[Child 4399] ###!!! ABORT: Aborting on channel error.: file /build/firefox-bLMGaO/firefox-52.0.2+build1/ipc/glue/MessageChannel.cpp, line 2143
+1492221479745	geckodriver	INFO	Listening on 127.0.0.1:39705
+1492221480910	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.9EVKxBI7pUT0
+1492221480911	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox
+1492221480913	geckodriver::marionette	INFO	Connecting to Marionette on localhost:45493
+1492221481601	Marionette	INFO	Listening on port 45493
+1492221482347	Marionette	WARN	TLS certificate errors will be ignored for this session
+1492221494569	Marionette	INFO	New connections will no longer be accepted
+
+###!!! [Child][MessageChannel] Error: (msgtype=0xE40003,name=PTexture::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x3E0003,name=PCompositable::Msg_Destroy) Channel error: cannot send/recv
+
+[Child 4518] ###!!! ABORT: Aborting on channel error.: file /build/firefox-bLMGaO/firefox-52.0.2+build1/ipc/glue/MessageChannel.cpp, line 2143
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x3E0003,name=PCompositable::Msg_Destroy) Channel error: cannot send/recv
+
+[Child 4518] ###!!! ABORT: Aborting on channel error.: file /build/firefox-bLMGaO/firefox-52.0.2+build1/ipc/glue/MessageChannel.cpp, line 2143
+1492221533191	geckodriver	INFO	Listening on 127.0.0.1:48435
+1492221534310	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.ko15XYQ4WVUK
+1492221534311	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox
+1492221534313	geckodriver::marionette	INFO	Connecting to Marionette on localhost:39029
+1492221535033	Marionette	INFO	Listening on port 39029
+1492221535816	Marionette	WARN	TLS certificate errors will be ignored for this session
+1492221538926	Marionette	INFO	New connections will no longer be accepted
+[Child 4647] ###!!! ABORT: Aborting on channel error.: file /build/firefox-bLMGaO/firefox-52.0.2+build1/ipc/glue/MessageChannel.cpp, line 2143
+[Child 4647] ###!!! ABORT: Aborting on channel error.: file /build/firefox-bLMGaO/firefox-52.0.2+build1/ipc/glue/MessageChannel.cpp, line 2143
+1492221538998	geckodriver	INFO	Listening on 127.0.0.1:43267
+1492221540114	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.oicRKJGsKonF
+1492221540114	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox
+1492221540116	geckodriver::marionette	INFO	Connecting to Marionette on localhost:39681
+1492221540814	Marionette	INFO	Listening on port 39681
+1492221541689	Marionette	WARN	TLS certificate errors will be ignored for this session
+1492221553941	Marionette	INFO	New connections will no longer be accepted
+[Child 4768] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-bLMGaO/firefox-52.0.2+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 322
+[Child 4768] ###!!! ABORT: Aborting on channel error.: file /build/firefox-bLMGaO/firefox-52.0.2+build1/ipc/glue/MessageChannel.cpp, line 2143
+[Child 4768] ###!!! ABORT: Aborting on channel error.: file /build/firefox-bLMGaO/firefox-52.0.2+build1/ipc/glue/MessageChannel.cpp, line 2143
+1492221591305	geckodriver	INFO	Listening on 127.0.0.1:51411
+1492221592381	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.nCfafAl87yaU
+1492221592381	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox
+1492221592383	geckodriver::marionette	INFO	Connecting to Marionette on localhost:40869
+1492221593016	Marionette	INFO	Listening on port 40869
+1492221593809	Marionette	WARN	TLS certificate errors will be ignored for this session
+1492221596855	Marionette	INFO	New connections will no longer be accepted
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x3E0003,name=PCompositable::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0xE40003,name=PTexture::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x3E0003,name=PCompositable::Msg_Destroy) Channel error: cannot send/recv
+
+[Child 4900] ###!!! ABORT: Aborting on channel error.: file /build/firefox-bLMGaO/firefox-52.0.2+build1/ipc/glue/MessageChannel.cpp, line 2143
+[Child 4900] ###!!! ABORT: Aborting on channel error.: file /build/firefox-bLMGaO/firefox-52.0.2+build1/ipc/glue/MessageChannel.cpp, line 2143
+1492221596933	geckodriver	INFO	Listening on 127.0.0.1:57311
+1492221598097	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.6HJJ8fak8iWD
+1492221598098	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox
+1492221598100	geckodriver::marionette	INFO	Connecting to Marionette on localhost:34077
+1492221598773	Marionette	INFO	Listening on port 34077
+1492221599560	Marionette	WARN	TLS certificate errors will be ignored for this session
+1492221650480	geckodriver	INFO	Listening on 127.0.0.1:51223
+1492221651555	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.sY3NWCK6om0d
+1492221651556	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox
+1492221651558	geckodriver::marionette	INFO	Connecting to Marionette on localhost:37709
+1492221652201	Marionette	INFO	Listening on port 37709
+1492221652977	Marionette	WARN	TLS certificate errors will be ignored for this session
+1492221656052	Marionette	INFO	New connections will no longer be accepted
+[Child 5141] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-bLMGaO/firefox-52.0.2+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 322
+[Child 5141] ###!!! ABORT: Aborting on channel error.: file /build/firefox-bLMGaO/firefox-52.0.2+build1/ipc/glue/MessageChannel.cpp, line 2143
+[Child 5141] ###!!! ABORT: Aborting on channel error.: file /build/firefox-bLMGaO/firefox-52.0.2+build1/ipc/glue/MessageChannel.cpp, line 2143
+
+###!!! [Child][MessageChannel] Error: (msgtype=0xE40003,name=PTexture::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0xE40003,name=PTexture::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x3E0003,name=PCompositable::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x3E0003,name=PCompositable::Msg_Destroy) Channel error: cannot send/recv
+
+1492221656117	geckodriver	INFO	Listening on 127.0.0.1:45003
+1492221657192	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.b4oWjRsjXCFu
+1492221657193	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox
+1492221657195	geckodriver::marionette	INFO	Connecting to Marionette on localhost:39845
+1492221657866	Marionette	INFO	Listening on port 39845
+1492221658682	Marionette	WARN	TLS certificate errors will be ignored for this session
+1492221682711	geckodriver	INFO	Listening on 127.0.0.1:60715
+1492221683873	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.TyStYXOerAIG
+1492221683873	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox
+1492221683875	geckodriver::marionette	INFO	Connecting to Marionette on localhost:42429
+1492221684528	Marionette	INFO	Listening on port 42429
+1492221685325	Marionette	WARN	TLS certificate errors will be ignored for this session
+1492221688425	Marionette	INFO	New connections will no longer be accepted
+[Child 5383] ###!!! ABORT: Aborting on channel error.: file /build/firefox-bLMGaO/firefox-52.0.2+build1/ipc/glue/MessageChannel.cpp, line 2143
+[Child 5383] ###!!! ABORT: Aborting on channel error.: file /build/firefox-bLMGaO/firefox-52.0.2+build1/ipc/glue/MessageChannel.cpp, line 2143
+1492221688511	geckodriver	INFO	Listening on 127.0.0.1:53367
+1492221689657	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.Ak4Zp8crOF1G
+1492221689658	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox
+1492221689660	geckodriver::marionette	INFO	Connecting to Marionette on localhost:39805
+1492221690335	Marionette	INFO	Listening on port 39805
+1492221691039	Marionette	WARN	TLS certificate errors will be ignored for this session
+1492221718305	Marionette	INFO	New connections will no longer be accepted
+[Child 5509] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-bLMGaO/firefox-52.0.2+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 322
+[Child 5509] ###!!! ABORT: Aborting on channel error.: file /build/firefox-bLMGaO/firefox-52.0.2+build1/ipc/glue/MessageChannel.cpp, line 2143
+
+###!!! [Child][MessageChannel] Error: (msgtype=0xE40003,name=PTexture::Msg_Destroy) Channel error: cannot send/recv
+
+[Child 5509] ###!!! ABORT: Aborting on channel error.: file /build/firefox-bLMGaO/firefox-52.0.2+build1/ipc/glue/MessageChannel.cpp, line 2143
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x3E0003,name=PCompositable::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x3E0003,name=PCompositable::Msg_Destroy) Channel error: cannot send/recv
+
+1492221793176	geckodriver	INFO	Listening on 127.0.0.1:53567
+1492221794257	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.azLewLudAFlg
+1492221794257	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox
+1492221794259	geckodriver::marionette	INFO	Connecting to Marionette on localhost:33143
+1492221794898	Marionette	INFO	Listening on port 33143
+1492221795666	Marionette	WARN	TLS certificate errors will be ignored for this session
+1492221798706	Marionette	INFO	New connections will no longer be accepted
+[Child 5635] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-bLMGaO/firefox-52.0.2+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 322
+[Child 5635] ###!!! ABORT: Aborting on channel error.: file /build/firefox-bLMGaO/firefox-52.0.2+build1/ipc/glue/MessageChannel.cpp, line 2143
+[Child 5635] ###!!! ABORT: Aborting on channel error.: file /build/firefox-bLMGaO/firefox-52.0.2+build1/ipc/glue/MessageChannel.cpp, line 2143
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x3E0003,name=PCompositable::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0xE40003,name=PTexture::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x3E0003,name=PCompositable::Msg_Destroy) Channel error: cannot send/recv
+
+1492221798756	geckodriver	INFO	Listening on 127.0.0.1:55739
+1492221799928	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.CQV0rruPFQEG
+1492221799929	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox
+1492221799931	geckodriver::marionette	INFO	Connecting to Marionette on localhost:40061
+1492221800616	Marionette	INFO	Listening on port 40061
+1492221801314	Marionette	WARN	TLS certificate errors will be ignored for this session
+1492221804478	Marionette	INFO	New connections will no longer be accepted
+[Child 5759] ###!!! ABORT: Aborting on channel error.: file /build/firefox-bLMGaO/firefox-52.0.2+build1/ipc/glue/MessageChannel.cpp, line 2143
+[Child 5759] ###!!! ABORT: Aborting on channel error.: file /build/firefox-bLMGaO/firefox-52.0.2+build1/ipc/glue/MessageChannel.cpp, line 2143
+1492221890364	geckodriver	INFO	Listening on 127.0.0.1:50383
+1492221891440	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.ZnG5WWFpb9Ah
+1492221891441	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox
+1492221891442	geckodriver::marionette	INFO	Connecting to Marionette on localhost:32841
+1492221892091	Marionette	INFO	Listening on port 32841
+1492221892909	Marionette	WARN	TLS certificate errors will be ignored for this session
+1492221896079	Marionette	INFO	New connections will no longer be accepted
+[Child 5925] ###!!! ABORT: Aborting on channel error.: file /build/firefox-bLMGaO/firefox-52.0.2+build1/ipc/glue/MessageChannel.cpp, line 2143
+
+###!!! [Child][MessageChannel] Error: (msgtype=0xE40003,name=PTexture::Msg_Destroy) Channel error: cannot send/recv
+
+[Child 5925] ###!!! ABORT: Aborting on channel error.: file /build/firefox-bLMGaO/firefox-52.0.2+build1/ipc/glue/MessageChannel.cpp, line 2143
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x3E0003,name=PCompositable::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x3E0003,name=PCompositable::Msg_Destroy) Channel error: cannot send/recv
+
+1492221896142	geckodriver	INFO	Listening on 127.0.0.1:59999
+1492221897217	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.Y5wSKm7lqSEj
+1492221897217	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox
+1492221897219	geckodriver::marionette	INFO	Connecting to Marionette on localhost:44189
+1492221897946	Marionette	INFO	Listening on port 44189
+1492221898727	Marionette	WARN	TLS certificate errors will be ignored for this session
+1492221902042	Marionette	INFO	New connections will no longer be accepted
+
+###!!! [Child][MessageChannel] Error: (msgtype=0xE40003,name=PTexture::Msg_Destroy) Channel error: cannot send/recv
+
+[Child 6046] ###!!! ABORT: Aborting on channel error.: file /build/firefox-bLMGaO/firefox-52.0.2+build1/ipc/glue/MessageChannel.cpp, line 2143
+[Child 6046] ###!!! ABORT: Aborting on channel error.: file /build/firefox-bLMGaO/firefox-52.0.2+build1/ipc/glue/MessageChannel.cpp, line 2143
+1492221941949	geckodriver	INFO	Listening on 127.0.0.1:33763
+1492221943025	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.BgKbGqP0PoEr
+1492221943025	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox
+1492221943027	geckodriver::marionette	INFO	Connecting to Marionette on localhost:39833
+1492221943691	Marionette	INFO	Listening on port 39833
+1492221944498	Marionette	WARN	TLS certificate errors will be ignored for this session
+1492221947557	Marionette	INFO	New connections will no longer be accepted
+[Child 6170] ###!!! ABORT: Aborting on channel error.: file /build/firefox-bLMGaO/firefox-52.0.2+build1/ipc/glue/MessageChannel.cpp, line 2143
+[Child 6170] ###!!! ABORT: Aborting on channel error.: file /build/firefox-bLMGaO/firefox-52.0.2+build1/ipc/glue/MessageChannel.cpp, line 2143
+1492221947600	geckodriver	INFO	Listening on 127.0.0.1:40085
+1492221948684	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.XM6xJQ9JXCjo
+1492221948684	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox
+1492221948686	geckodriver::marionette	INFO	Connecting to Marionette on localhost:41915
+1492221949365	Marionette	INFO	Listening on port 41915
+1492221950142	Marionette	WARN	TLS certificate errors will be ignored for this session
+1492221953490	Marionette	INFO	New connections will no longer be accepted
+[Child 6290] ###!!! ABORT: Aborting on channel error.: file /build/firefox-bLMGaO/firefox-52.0.2+build1/ipc/glue/MessageChannel.cpp, line 2143
+[Child 6290] ###!!! ABORT: Aborting on channel error.: file /build/firefox-bLMGaO/firefox-52.0.2+build1/ipc/glue/MessageChannel.cpp, line 2143
+1492221982419	geckodriver	INFO	Listening on 127.0.0.1:54373
+1492221983495	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.7NViRHYz8aIq
+1492221983495	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox
+1492221983497	geckodriver::marionette	INFO	Connecting to Marionette on localhost:36665
+1492221984194	Marionette	INFO	Listening on port 36665
+1492221984935	Marionette	WARN	TLS certificate errors will be ignored for this session
+1492221988018	Marionette	INFO	New connections will no longer be accepted
+[Child 6411] ###!!! ABORT: Aborting on channel error.: file /build/firefox-bLMGaO/firefox-52.0.2+build1/ipc/glue/MessageChannel.cpp, line 2143
+[Child 6411] ###!!! ABORT: Aborting on channel error.: file /build/firefox-bLMGaO/firefox-52.0.2+build1/ipc/glue/MessageChannel.cpp, line 2143
+1492221988086	geckodriver	INFO	Listening on 127.0.0.1:45637
+1492221989200	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.wOiMD6GNY0RZ
+1492221989200	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox
+1492221989202	geckodriver::marionette	INFO	Connecting to Marionette on localhost:39011
+1492221989860	Marionette	INFO	Listening on port 39011
+1492221990579	Marionette	WARN	TLS certificate errors will be ignored for this session
+1492221993844	Marionette	INFO	New connections will no longer be accepted
+[Child 6530] ###!!! ABORT: Aborting on channel error.: file /build/firefox-bLMGaO/firefox-52.0.2+build1/ipc/glue/MessageChannel.cpp, line 2143
+[Child 6530] ###!!! ABORT: Aborting on channel error.: file /build/firefox-bLMGaO/firefox-52.0.2+build1/ipc/glue/MessageChannel.cpp, line 2143
+
+###!!! [Child][MessageChannel] Error: (msgtype=0xE40003,name=PTexture::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x3E0003,name=PCompositable::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x3E0003,name=PCompositable::Msg_Destroy) Channel error: cannot send/recv
+
+1492222039299	geckodriver	INFO	Listening on 127.0.0.1:40199
+1492222040373	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.bPThVV3hf3xT
+1492222040373	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox
+1492222040375	geckodriver::marionette	INFO	Connecting to Marionette on localhost:38233
+1492222041020	Marionette	INFO	Listening on port 38233
+1492222041775	Marionette	WARN	TLS certificate errors will be ignored for this session
+1492222044871	Marionette	INFO	New connections will no longer be accepted
+[Child 6649] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-bLMGaO/firefox-52.0.2+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 322
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x3E0003,name=PCompositable::Msg_Destroy) Channel error: cannot send/recv
+
+[Child 6649] ###!!! ABORT: Aborting on channel error.: file /build/firefox-bLMGaO/firefox-52.0.2+build1/ipc/glue/MessageChannel.cpp, line 2143
+
+###!!! [Child][MessageChannel] Error: (msgtype=0xE40003,name=PTexture::Msg_Destroy) Channel error: cannot send/recv
+
+[Child 6649] ###!!! ABORT: Aborting on channel error.: file /build/firefox-bLMGaO/firefox-52.0.2+build1/ipc/glue/MessageChannel.cpp, line 2143
+###!!! [Child][MessageChannel] Error: (msgtype=0xE40003,name=PTexture::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x3E0003,name=PCompositable::Msg_Destroy) Channel error: cannot send/recv
+
+
+1492222044922	geckodriver	INFO	Listening on 127.0.0.1:47705
+1492222046056	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.xTBR7UWkkLNf
+1492222046057	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox
+1492222046059	geckodriver::marionette	INFO	Connecting to Marionette on localhost:41065
+1492222046721	Marionette	INFO	Listening on port 41065
+1492222047483	Marionette	WARN	TLS certificate errors will be ignored for this session
+1492222050779	Marionette	INFO	New connections will no longer be accepted
+
+###!!! [Child][MessageChannel] Error: (msgtype=0xE40003,name=PTexture::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0xE40003,name=PTexture::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x3E0003,name=PCompositable::Msg_Destroy) Channel error: cannot send/recv
+
+[Child 6772] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-bLMGaO/firefox-52.0.2+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 322
+[Child 6772] ###!!! ABORT: Aborting on channel error.: file /build/firefox-bLMGaO/firefox-52.0.2+build1/ipc/glue/MessageChannel.cpp, line 2143
+[Child 6772] ###!!! ABORT: Aborting on channel error.: file /build/firefox-bLMGaO/firefox-52.0.2+build1/ipc/glue/MessageChannel.cpp, line 2143
+1492222057323	geckodriver	INFO	Listening on 127.0.0.1:40773
+1492222058406	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.QXHKBVZhzr02
+1492222058407	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox
+1492222058408	geckodriver::marionette	INFO	Connecting to Marionette on localhost:34047
+1492222059101	Marionette	INFO	Listening on port 34047
+1492222059958	Marionette	WARN	TLS certificate errors will be ignored for this session
+1492222063122	Marionette	INFO	New connections will no longer be accepted
+[Child 6893] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-bLMGaO/firefox-52.0.2+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 322
+[Child 6893] ###!!! ABORT: Aborting on channel error.: file /build/firefox-bLMGaO/firefox-52.0.2+build1/ipc/glue/MessageChannel.cpp, line 2143
+[Child 6893] ###!!! ABORT: Aborting on channel error.: file /build/firefox-bLMGaO/firefox-52.0.2+build1/ipc/glue/MessageChannel.cpp, line 2143
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x3E0003,name=PCompositable::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0xE40003,name=PTexture::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0xE40003,name=PTexture::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x3E0003,name=PCompositable::Msg_Destroy) Channel error: cannot send/recv
+
+1492222063179	geckodriver	INFO	Listening on 127.0.0.1:51789
+1492222064254	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.SzqASsTuzFK9
+1492222064255	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox
+1492222064256	geckodriver::marionette	INFO	Connecting to Marionette on localhost:34805
+1492222073820	geckodriver	INFO	Listening on 127.0.0.1:57591
+1492222074896	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.Xphl6xz7ThNr
+1492222074897	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox
+1492222074899	geckodriver::marionette	INFO	Connecting to Marionette on localhost:45467
+1492222075554	Marionette	INFO	Listening on port 45467
+1492222076344	Marionette	WARN	TLS certificate errors will be ignored for this session
+1492222079420	Marionette	INFO	New connections will no longer be accepted
+[Child 7056] ###!!! ABORT: Aborting on channel error.: file /build/firefox-bLMGaO/firefox-52.0.2+build1/ipc/glue/MessageChannel.cpp, line 2143
+[Child 7056] ###!!! ABORT: Aborting on channel error.: file /build/firefox-bLMGaO/firefox-52.0.2+build1/ipc/glue/MessageChannel.cpp, line 2143
+1492222079473	geckodriver	INFO	Listening on 127.0.0.1:51295
+1492222079556	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.NZCcWZ69EoRN
+1492222079557	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox
+1492222079558	geckodriver::marionette	INFO	Connecting to Marionette on localhost:42841
+1492222080262	Marionette	INFO	Listening on port 42841
+1492222081327	Marionette	WARN	TLS certificate errors will be ignored for this session
+1492222084646	Marionette	INFO	New connections will no longer be accepted
+[Child 7173] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-bLMGaO/firefox-52.0.2+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 322
+[Child 7173] ###!!! ABORT: Aborting on channel error.: file /build/firefox-bLMGaO/firefox-52.0.2+build1/ipc/glue/MessageChannel.cpp, line 2143
+[Child 7173] ###!!! ABORT: Aborting on channel error.: file /build/firefox-bLMGaO/firefox-52.0.2+build1/ipc/glue/MessageChannel.cpp, line 2143
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x3E0003,name=PCompositable::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0xE40003,name=PTexture::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x3E0003,name=PCompositable::Msg_Destroy) Channel error: cannot send/recv
+
+1492222091512	geckodriver	INFO	Listening on 127.0.0.1:49877
+1492222092587	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.7sa6CDxdgjw4
+1492222092587	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox
+1492222092589	geckodriver::marionette	INFO	Connecting to Marionette on localhost:43161
+1492222093304	Marionette	INFO	Listening on port 43161
+1492222094141	Marionette	WARN	TLS certificate errors will be ignored for this session
+1492222097195	Marionette	INFO	New connections will no longer be accepted
+[Child 7293] ###!!! ABORT: Aborting on channel error.: file /build/firefox-bLMGaO/firefox-52.0.2+build1/ipc/glue/MessageChannel.cpp, line 2143
+[Child 7293] ###!!! ABORT: Aborting on channel error.: file /build/firefox-bLMGaO/firefox-52.0.2+build1/ipc/glue/MessageChannel.cpp, line 2143
+1492222097254	geckodriver	INFO	Listening on 127.0.0.1:54309
+1492222098428	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.8jgCZHd3TEL5
+1492222098429	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox
+1492222098431	geckodriver::marionette	INFO	Connecting to Marionette on localhost:40135
+1492222099082	Marionette	INFO	Listening on port 40135
+1492222099843	Marionette	WARN	TLS certificate errors will be ignored for this session
+1492222103185	Marionette	INFO	New connections will no longer be accepted
+[Child 7412] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-bLMGaO/firefox-52.0.2+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 322
+[Child 7412] ###!!! ABORT: Aborting on channel error.: file /build/firefox-bLMGaO/firefox-52.0.2+build1/ipc/glue/MessageChannel.cpp, line 2143
+[Child 7412] ###!!! ABORT: Aborting on channel error.: file /build/firefox-bLMGaO/firefox-52.0.2+build1/ipc/glue/MessageChannel.cpp, line 2143
+1492222126101	geckodriver	INFO	Listening on 127.0.0.1:48661
+1492222127257	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.0alWeLfTjfKe
+1492222127258	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox
+1492222127260	geckodriver::marionette	INFO	Connecting to Marionette on localhost:37961
+1492222127927	Marionette	INFO	Listening on port 37961
+1492222128716	Marionette	WARN	TLS certificate errors will be ignored for this session
+1492222131832	Marionette	INFO	New connections will no longer be accepted
+[Child 7533] ###!!! ABORT: Aborting on channel error.: file /build/firefox-bLMGaO/firefox-52.0.2+build1/ipc/glue/MessageChannel.cpp, line 2143
+[Child 7533] ###!!! ABORT: Aborting on channel error.: file /build/firefox-bLMGaO/firefox-52.0.2+build1/ipc/glue/MessageChannel.cpp, line 2143
+1492222131889	geckodriver	INFO	Listening on 127.0.0.1:41921
+1492222133036	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.LORg4zjFpK0k
+1492222133037	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox
+1492222133039	geckodriver::marionette	INFO	Connecting to Marionette on localhost:45449
+1492222133706	Marionette	INFO	Listening on port 45449
+1492222134433	Marionette	WARN	TLS certificate errors will be ignored for this session
+1492222137689	Marionette	INFO	New connections will no longer be accepted
+[Child 7654] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-bLMGaO/firefox-52.0.2+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 322
+[Child 7654] ###!!! ABORT: Aborting on channel error.: file /build/firefox-bLMGaO/firefox-52.0.2+build1/ipc/glue/MessageChannel.cpp, line 2143
+[Child 7654] ###!!! ABORT: Aborting on channel error.: file /build/firefox-bLMGaO/firefox-52.0.2+build1/ipc/glue/MessageChannel.cpp, line 2143
