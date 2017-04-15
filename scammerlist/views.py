@@ -8,7 +8,7 @@ def index(request):
 
 def search(request):
     getname = request.GET['search_name']
-    results = Person.objects.filter(name=getname) # Every person in all catalog
+    results = Person.objects.filter(name__contains=getname) # Every person in all catalog
     result_text = ""
     if len(results) == 0:
         result_text = "Not found"
