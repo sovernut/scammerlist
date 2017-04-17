@@ -27,7 +27,7 @@ class NewVisitorModifyData(LiveServerTestCase):
         searchbox = self.browser.find_element_by_id('searchBox')
         self.assertEqual(
             searchbox.get_attribute('placeholder'),
-            'Enter name'
+            'Enter name or email'
         )
         searchbox.send_keys('X')
         searchbox.send_keys(Keys.ENTER)

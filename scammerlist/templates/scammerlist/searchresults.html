@@ -25,6 +25,13 @@
     <li><a href="{% url 'person_de' people.id %}">{{ people.name }} ({{ people.catalog }})</a></li>
 {% endfor %}
 </ul>
+
+<h3>Result by Email : {{ resultsemail.count }} People</h3><br>
+<ul id="result_email">
+{% for people in resultsemail %}
+    <li><a href="{% url 'person_de' people.id %}">{{ people.name }} ({{ people.catalog }})</a></li>
+{% endfor %}
+</ul>
 </div>
 
 

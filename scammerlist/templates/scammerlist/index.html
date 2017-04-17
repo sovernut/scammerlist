@@ -30,7 +30,15 @@
 <div class="container">
       <div class="row">
         <div class="col-sm-6">
-          <input type="text" id="searchBox" class="form-control" name="search_name" placeholder="Enter name">
+          <input type="text" id="searchBox" class="form-control" name="search_name" placeholder="Enter name or email">
+        </div>
+        <div class="col-sm-2">
+            <select class="form-control" name="search_cat" id="search_cat">
+                <option value="all">All</option>
+                {% for a in catalog %}
+                    <option value="{{ a.id }}">{{ a }}</option>
+                {% endfor %}
+            </select></td>
         </div>
         <div class="col-sm-2">
           <input type="submit" class="btn btn-primary" id="sub_btn" value="Search" >

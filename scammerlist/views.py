@@ -8,7 +8,15 @@ def index(request):
 
 def search(request):
     getname = request.GET['search_name']
-    results = Person.objects.filter(name__contains=getname) # Every person in all catalog
+    search_cat = request.GET['search_cat']
+    if search_cat == 'all':
+        results = Person.objects.filter(name__contains=getname) # Every person in all catalog
+        resultsemail = Person.objects.filter(email__contains=getname)
+    else:
+        catalog = get_object_or_404(Catalog,pk=int(search_cat))
+        results = catalog.person_set.filter(name__contains=getname) # Every person in all catalog
+        resultsemail = catalog.person_set.filter(email__contains=getname)
+        
     result_text = ""
     if len(results) == 0:
         result_text = "Not found"
@@ -17,8 +25,8 @@ def search(request):
         result_text = "Found : " + str(len(results)) + " people"
         
             
-    return render(request,"scammerlist/searchresults.html",     {'results_text':result_text,
-   'results':results }) 
+    return render(request,"scammerlist/searchresults.html", {'results_text':result_text,
+   'results':results ,'resultsemail':resultsemail}) 
     
 def listname(request,catalog_id):
     catalog = get_object_or_404(Catalog,pk=catalog_id)
