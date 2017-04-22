@@ -18,12 +18,23 @@
 </nav>
 <!-- **************STOP NAVBAR************** -->
 <div class="container">
-{# show person detail #}
-from catalog : {{ person.catalog }}<br>
-Name : {{ person.name }}<br>
-Email : {{ person.email }}<br>
-MobileNumber : {{ person.mobile_number }}<br>
-Detail : {{ person.detail }}<br>
+    
+    <div class="card">
+    
+    <div class="card-block">
+        <h4 class="card-title">from catalog : {{ person.catalog }}</h4>
+        <p class="card-text">
+          Name : {{ person.name }}<br>
+          Email : {{ person.email }}<br>
+          MobileNumber : {{ person.mobile_number }}<br>
+          Detail : {{ person.detail }}<br><br>
+        </p>
+    
+    
+           ไม่เป็นความจริง ? <input type="submit" class="btn btn-danger" id="report_btn" value="Report">
+      </div>
+    </div>
+     
 </div>
 
 
