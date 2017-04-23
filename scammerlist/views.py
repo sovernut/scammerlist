@@ -1,6 +1,7 @@
 from django.shortcuts import redirect, render , get_object_or_404
-from django.http import HttpResponse
-from .models import Person,Catalog 
+from django.urls import reverse
+from django.http import HttpResponse, HttpResponseRedirect
+from .models import Person,Catalog,Report
 
 def index(request):
     catalog = Catalog.objects.order_by('-type_cat') 
@@ -35,6 +36,17 @@ def listname(request,catalog_id):
 def persondetail(request,person_id):
     person = get_object_or_404(Person,pk=person_id)
     return render(request,"scammerlist/detail_sub.html",{"person":person})
+    
+def personreport(request,person_id):
+    person = get_object_or_404(Person,pk=person_id)
+    return render(request,"scammerlist/report.html",{"person":person})
+
+def save_reported(request,person_id):
+    report_detail = request.POST['report']
+    person = get_object_or_404(Person,pk=person_id)
+    person.report_set.create(report_detail=report_detail)
+    return HttpResponseRedirect(reverse('person_de',kwargs={'person_id':person_id}))
+
     
 def addperson(request):
     catalog_all = Catalog.objects.order_by('-type_cat')

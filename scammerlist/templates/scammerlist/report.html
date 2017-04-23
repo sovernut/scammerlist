@@ -22,21 +22,21 @@
     <div class="card">
     
     <div class="card-block">
-        <a href="{% url 'listname' person.catalog.id %}"><h4 class="card-title">from catalog : {{ person.catalog }}</h4></a>
-        <p class="card-text">
-          Name : {{ person.name }}<br>
-          Email : {{ person.email }}<br>
-          MobileNumber : {{ person.mobile_number }}<br>
-          Detail : {{ person.detail }}<br><br>
-        </p>
+        <a href="{% url 'person_de' person.id %}"><h4 class="card-title">Report : {{ person }} ( {{ person.catalog }} )</h4></a>
+            <p class="card-text">
+              Name : {{ person.name }}<br>
+              Email : {{ person.email }}<br>
+              MobileNumber : {{ person.mobile_number }}<br>
+              Detail : {{ person.detail }}<br><br>
+            </p>
+        <form method="post" action="{% url 'save_reported' person.id %}">
+            {% csrf_token %}
+            <textarea rows="4" cols="50" type="text" id="report" name="report" required="required"></textarea>
+            <br><input type="submit" class="btn btn-danger" id="report_btn" value="Report">
+        </form>
     
     
-           ไม่เป็นความจริง ? <a href="{% url 'person_report' person.id %}"><input type="submit" class="btn btn-danger" id="report_btn" value="Report"></a>
-           {% if person.report_set.count == 0 %}
-           <br><p>This person has been reported :  {{ person.report_set.count }} timed.</p>
-           {% else %}
-           <p style="color:red">This person has been reported :  <b>{{ person.report_set.count }}</b> timed.</p>
-           {% endif %}
+        
       </div>
     </div>
      

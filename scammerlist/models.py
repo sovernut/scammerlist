@@ -18,4 +18,10 @@ class Person(models.Model):
 
     def __str__(self):
         return self.name
-
+        
+class Report(models.Model):
+    person = models.ForeignKey(Person, on_delete=models.CASCADE)
+    report_detail = models.CharField(max_length=400)
+    
+    def __str__(self):
+        return self.report_detail
