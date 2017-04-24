@@ -6,15 +6,9 @@
 </head>
 
 <!-- **************START NAVBAR************** -->
-<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
-  <a class="navbar-brand" href="{% url 'index' %}">Scammer</a>
-  <div class="collapse navbar-collapse">
-    <div class="navbar-nav">
-      <a class="nav-item nav-link active" href="{% url 'index' %}">Home <span class="sr-only">(current)</span></a>
-      <a class="nav-item nav-link" href="{% url 'addperson' %}">Add person</a>
-    </div>
-  </div>
-</nav>
+    {% block content %}
+        {% include 'scammerlist/navbar.html' %}
+    {% endblock %}
 <!-- **************STOP NAVBAR************** -->
 
 <div class="container-fluid">
@@ -52,5 +46,7 @@
         <li><a href="list/{{a.id}}">{{ a }}</a></li>
     {% endfor %}
     </ul>
+    
+
 </div>
 
