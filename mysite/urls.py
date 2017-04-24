@@ -25,6 +25,7 @@ urlpatterns = [
     url(r'^detail/(?P<person_id>[0-9]+)$', views.persondetail, name='person_de'),
     url(r'^report/(?P<person_id>[0-9]+)$', views.personreport, name='person_report'),
     url(r'^savereport/(?P<person_id>[0-9]+)$', views.save_reported, name='save_reported'),
+    url(r'^report_list$', views.show_reported, name='show_report'),
     url(r'^add_p$', views.addperson, name='addperson'),
     #url(r'^$', include('scammerlist.urls')),
     url(r'^admin/', admin.site.urls),

@@ -46,6 +46,15 @@ def save_reported(request,person_id):
     person = get_object_or_404(Person,pk=person_id)
     person.report_set.create(report_detail=report_detail)
     return HttpResponseRedirect(reverse('person_de',kwargs={'person_id':person_id}))
+    
+def show_reported(request):
+    people = Person.objects.all()
+    '''reported_person = []
+    for person in people:
+        if people.report_set.count() > 0:
+            reported_person += people'''
+
+    return render(request,"scammerlist/report_detail.html",{"people":people})
 
     
 def addperson(request):
