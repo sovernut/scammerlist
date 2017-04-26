@@ -1,5 +1,6 @@
 from django.shortcuts import redirect, render , get_object_or_404
 from django.urls import reverse
+from django.utils import timezone
 from django.http import HttpResponse, HttpResponseRedirect
 from .models import Person,Catalog,Report
 
@@ -44,7 +45,10 @@ def personreport(request,person_id):
 def save_reported(request,person_id):
     report_detail = request.POST['report']
     person = get_object_or_404(Person,pk=person_id)
-    person.report_set.create(report_detail=report_detail)
+    report_time = timezone.now()
+    person.last_report_time = report_time
+    person.save()
+    person.report_set.create(report_detail=report_detail,report_time=report_time)
     return HttpResponseRedirect(reverse('person_de',kwargs={'person_id':person_id}))
     
 def show_reported(request):

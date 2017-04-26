@@ -18,6 +18,7 @@
     <table class="table" id="report_list">
       <thead class="thead-inverse">
         <tr>
+          <th>Report time</th>
           <th>NAME & CATALOG</th>
           <th>DETAIL</th>
           <th>REPORT COUNT</th>
@@ -27,6 +28,7 @@
         {% for person in people %}
             {% if person.report_set.count > 0 %}
             <tr>
+                <td>{{ person.last_report_time }}</td>
               <td><a href="{% url 'person_de' person.id %}">{{ person.name }} ({{ person.catalog }})</a></td>
               <td>{{ person.detail }}</td>
               <td>{{ person.report_set.count }}</td>
