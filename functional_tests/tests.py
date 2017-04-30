@@ -5,7 +5,7 @@ from selenium.webdriver.common.keys import Keys
 import time
 from scammerlist.models import Catalog , Person
 
-class NewVisitorModifyData(LiveServerTestCase):
+class NewVisitorModifyData(StaticLiveServerTestCase):
 
     def setUp(self):
         self.browser = webdriver.Firefox()

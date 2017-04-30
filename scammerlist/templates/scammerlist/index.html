@@ -14,38 +14,48 @@
 <div class="container-fluid">
 <title>Search for scammer</title>
 {# ------------add page------------ #}
-<h1>Search for scammer</h1>
-{# ----------SEARCH BOX--------------- #}
-<div class="alert alert-info" role="alert">
-    <strong>Info !</strong> Search for scammer here.
-</div>
+
 <form method="get" action="/search">
 <div class="container">
       <div class="row">
-        <div class="col-sm-6">
-          <input type="text" id="searchBox" class="form-control" name="search_name" placeholder="Enter name or email">
-        </div>
-        <div class="col-sm-2">
+        <div class="col-lg-6">
+        {# ----------SEARCH BOX--------------- #}
+        <h1>Search for scammer</h1>
+
+            <div class="alert alert-info" role="alert">
+                <strong>Info !</strong> Search for scammer here.
+            </div>
+            <div class="row">
+            <div class="col-sm-8">
+            <input type="text" id="searchBox" class="form-control" name="search_name" placeholder="Enter name or email">
             <select class="form-control" name="search_cat" id="search_cat">
-                <option value="all">All</option>
-                {% for a in catalog %}
-                    <option value="{{ a.id }}">{{ a }}</option>
-                {% endfor %}
-            </select></td>
+                    <option value="all">All</option>
+                    {% for a in catalog %}
+                        <option value="{{ a.id }}">{{ a }}</option>
+                    {% endfor %}
+            </div>
+            <div class="col-sm-4">
+              <input type="submit" class="btn btn-primary" id="sub_btn" value="Search" >
+             </div>
+            </div>
         </div>
-        <div class="col-sm-2">
-          <input type="submit" class="btn btn-primary" id="sub_btn" value="Search" >
+
+            
+
+        <div class="col-lg-6">
+              <h1>Select Catalog</h1>
+                <ul>
+                {% for a in catalog %}
+                    <li><a href="list/{{a.id}}">{{ a }}</a></li>
+                {% endfor %}
+                </ul>
         </div>
       </div>
     </div>
 
     {# ------ LIST FOR CATALOG ------ #}
-    <h1>Select Catalog</h1>
-    <ul>
-    {% for a in catalog %}
-        <li><a href="list/{{a.id}}">{{ a }}</a></li>
-    {% endfor %}
-    </ul>
+
+    
     
 
 </div>
