@@ -1,7 +1,22 @@
-{% extends 'scammerlist/base.html' %}
+{% load static %}
+<head>
+<title>Scammer List</title>
+<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+<link rel="stylesheet" href="{% static 'css/bootstrap-theme.min.css' %}">
+</head>
 
-{% block maincontent %}
+<!-- **************START NAVBAR************** -->
+    {% block content %}
+        {% include 'scammerlist/navbar.html' %}
+    {% endblock %}
+<!-- **************STOP NAVBAR************** -->
+
+<div class="container-fluid">
+<title>Search for scammer</title>
+{# ------------add page------------ #}
+
 <form method="get" action="/search">
+<div class="container">
       <div class="row">
         <div class="col-lg-6">
         {# ----------SEARCH BOX--------------- #}
@@ -24,6 +39,9 @@
              </div>
             </div>
         </div>
+
+            
+
         <div class="col-lg-6">
               <h1>Select Catalog</h1>
                 <ul>
@@ -34,13 +52,11 @@
         </div>
       </div>
     </div>
-</form>
 
-{% endblock %}
-
+    {# ------ LIST FOR CATALOG ------ #}
 
     
     
 
-
+</div>
 

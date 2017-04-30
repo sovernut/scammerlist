@@ -1,38 +1,30 @@
-{% load static %}
+{% extends 'scammerlist/base.html' %}
 
-<head>
-<title>Scammer List</title>
-<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
-<link rel="stylesheet" href="{% static 'css/bootstrap-theme.min.css' %}">
-</head>
 
-<!-- **************START NAVBAR************** -->
-    {% block content %}
-        {% include 'scammerlist/navbar.html' %}
-    {% endblock %}
-<!-- **************STOP NAVBAR************** -->
+{% block header %}
+List all people in {{ catalog }}
+{% endblock %}
 
-<div class="container">
-<h2>List all people in {{ catalog }}</h2>
-{# show all name #}
-    <table class="table" id="table_list">
-      <thead class="thead-inverse">
-        <tr>
-          <th>NAME</th>
-          <th>EMAIL</th>
-          <th>DETAIL</th>
-        </tr>
-      </thead>
-      <tbody>
-        {% for people in catalog.person_set.all %}
-            <tr>
-              <td><a href="{% url 'person_de' people.id %}">{{ people.name }}</a></td>
-              <td>{{ people.email }}</td>
-              <td>{{ people.detail }}</td>
-            </tr>
-        {% endfor %}
-      </tbody>
-    </table>
-</div>
+
+{% block table_id %}table_list{% endblock %}
+{% block table %}
+<thead class="thead-inverse">
+<tr>
+  <th>NAME</th>
+  <th>EMAIL</th>
+  <th>DETAIL</th>
+</tr>
+</thead>
+<tbody>
+{% for people in catalog.person_set.all %}
+    <tr>
+      <td><a href="{% url 'person_de' people.id %}">{{ people.name }}</a></td>
+      <td>{{ people.email }}</td>
+      <td>{{ people.detail }}</td>
+    </tr>
+{% endfor %}
+</tbody>
+{% endblock %}
+
 
 

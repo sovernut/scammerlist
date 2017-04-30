@@ -1,0 +1,34 @@
+{% load static %}
+<head>
+<title>Scammer List</title>
+<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+<link rel="stylesheet" href="{% static 'css/bootstrap-theme.min.css' %}">
+</head>
+
+<!-- **************START NAVBAR************** -->
+<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+  <a class="navbar-brand" href="{% url 'index' %}">Scammer</a>
+  <div class="collapse navbar-collapse">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link" href="{% url 'index' %}">Home <span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link" href="{% url 'addperson' %}">Add person</a>
+      <a class="nav-item nav-link" href="{% url 'show_report' %}">Show reported person</a>
+    </div>
+  </div>
+</nav>
+<!-- **************STOP NAVBAR************** -->
+
+<title>Search for scammer</title>
+
+<div class="container">
+<h2>{% block header %}{% endblock %}</h2>
+{% block maincontent %}
+
+{% endblock %}
+
+<table class="table" id="{% block table_id %}{% endblock %}">
+{% block table %}
+
+{% endblock %}
+</table>
+</div>
