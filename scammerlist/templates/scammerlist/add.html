@@ -20,7 +20,7 @@
       <tbody>
         <tr>
           <td>Catalog</td>
-          <td><select name="catalog" id="catalog" >
+          <td><select class="form-control" name="catalog" id="catalog" >
             {% for a in catalog_all %}
                 <option value="{{ a.id }}">{{ a }}</option>
             {% endfor %}
@@ -28,19 +28,19 @@
         </tr>
         <tr>
           <td>Name</td>
-          <td><input type="text" id="name" name="name" placeholder="name" required="required"></td>
+          <td><input type="text" class="form-control" id="name" name="name" placeholder="name" required="required"></td>
         </tr>
         <tr>
           <td>Email</td>
-          <td><input type="email" id="email" name="email" placeholder="xx@xx.com" required="required"></td>
+          <td><input type="email" class="form-control" id="email" name="email" placeholder="xx@xx.com" required="required"></td>
         </tr>
         <tr>
           <td>Mobile Number</td>
-          <td><input type="number" id="mobile" name="mobile" placeholder="ex. 089xxxxxxx" required="required"></td>
+          <td><input type="number" class="form-control" id="mobile" name="mobile" placeholder="ex. 089xxxxxxx" required="required"></td>
         </tr>
         <tr>
           <td>Detail</td>
-          <td><textarea rows="4" cols="50" type="text" id="detail" name="detail" placeholder="รายละเอียดการโกง" required="required"></textarea></td>
+          <td><textarea rows="4" cols="50" class="form-control" type="text" id="detail" name="detail" placeholder="รายละเอียดการโกง" required="required"></textarea></td>
         </tr>
         <tr>
             <td><input type="submit" class="btn btn-success" id="add_btn" value="Add"></td>
