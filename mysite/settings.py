@@ -25,7 +25,7 @@ SECRET_KEY = 'y-*q*2_7@g9qd_olxepxqv2(2-2un$ssaff($t5x*6$*fy$a)-'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://gentle-springs-97441.herokuapp.com/']
+ALLOWED_HOSTS = ['gentle-springs-97441.herokuapp.com']
 
 
 # Application definition
