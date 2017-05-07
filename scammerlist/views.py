@@ -77,3 +77,6 @@ def addperson(request):
         print("OK")
         return redirect('/') # redirect to homepage
     return render(request,"scammerlist/add.html",{"catalog_all":catalog_all})
+    
+def show_about(request):
+    return render(request,"scammerlist/about.html")

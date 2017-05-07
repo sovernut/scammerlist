@@ -1,0 +1,41 @@
+{% load static %}
+<head>
+<title>Scammer List</title>
+<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+<link rel="stylesheet" href="{% static 'css/bootstrap-theme.min.css' %}">
+</head>
+
+<!-- **************START NAVBAR************** -->
+    {% block content %}
+        {% include 'scammerlist/navbar.html' %}
+    {% endblock %}
+<!-- **************STOP NAVBAR************** -->
+
+
+<title>Search for scammer</title>
+
+<div class="container-fluid">
+
+<div class="row">
+  <div class="col-md-4" style="padding:10px">
+    <div class="card">
+      <div class="card-header">
+        Featured
+      </div>
+      <div class="card-block">
+
+        
+      <ul class="list">
+          <li>Search for scammer by name or email !</li>
+          <li>Add person that suspect to be scammer</li>
+          <li>Report if that person is not scammer</li>
+       </ul>
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+</div>
+
