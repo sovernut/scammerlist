@@ -14,7 +14,7 @@
 <div class="container-fluid">
 <title>Search for scammer</title>
 {# ------------add page------------ #}
-<h1>Search for scammer</h1>
+<h1 align=center>Search for scammer</h1>
 {# ----------SEARCH BOX--------------- #}
 <div class="alert alert-info" role="alert">
     <strong>INFO : </strong> ค้นหารายชื่อผู้ทำการโกง ซื้อ-ขาย ได้ที่นี่
@@ -39,14 +39,16 @@
       </div>
     </div>
 
-    {# ------ LIST FOR CATALOG ------ #}
-    <h1>เลือกดูตามประเภทการซื้อ-ขาย</h1>
+    {# ------ LIST FOR CATALOG ------ #}<br>
+    <h1 align=center>เลือกดูตามประเภทการซื้อ-ขาย</h1>
+    
+    <center>
     <ul>
     {% for a in catalog %}
         <li><a href="list/{{a.id}}">{{ a }}</a></li>
     {% endfor %}
     </ul>
-    
+    </center>
 
 </div>
 

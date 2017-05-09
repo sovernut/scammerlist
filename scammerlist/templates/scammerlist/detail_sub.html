@@ -18,6 +18,8 @@
     <div class="card-block">
         <a href="{% url 'listname' person.catalog.id %}"><h4 class="card-title">from catalog : {{ person.catalog }}</h4></a>
         <p class="card-text">
+          <img src="{{ person.picture_url }}" width="100px" height="100
+          px"><br>
           Name : {{ person.name }}<br>
           Email : {{ person.email }}<br>
           MobileNumber : {{ person.mobile_number }}<br>
@@ -30,6 +32,9 @@
            <br><p>This person has been reported :  {{ person.report_set.count }} timed.</p>
            {% else %}
            <p style="color:red">This person has been reported :  <b>{{ person.report_set.count }}</b> timed.</p>
+           {% endif %}
+           {% if person.report_set.count > 5 %}
+           <br><p>บุคคลนี้อาจจะไม่ได้โกง เนื่องมีการ report ทั้งหมด : {{ person.report_set.count }} ครั้ง</p>
            {% endif %}
       </div>
     </div>

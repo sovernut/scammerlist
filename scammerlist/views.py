@@ -72,6 +72,7 @@ def addperson(request):
             email=request.POST['email'],
             mobile_number=request.POST['mobile'],
             detail=request.POST['detail'],
+            picture_url=request.POST['picture'],
             )
         catalog.save()
         print("OK")
