@@ -28,7 +28,7 @@
             <tr>
               <td><a href="{% url 'person_de' people.id %}">{{ people.name }}</a></td>
               <td>{{ people.email }}</td>
-              <td>{{ people.detail }}</td>
+              <td>{{ people.detail|linebreaks }}</td>
             </tr>
         {% endfor %}
       </tbody>

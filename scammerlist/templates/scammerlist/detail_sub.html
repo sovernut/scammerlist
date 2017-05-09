@@ -21,11 +21,11 @@
           Name : {{ person.name }}<br>
           Email : {{ person.email }}<br>
           MobileNumber : {{ person.mobile_number }}<br>
-          Detail : {{ person.detail }}<br><br>
+          Detail : {{ person.detail|linebreaks }}<br><br>
         </p>
     
     
-           ไม่เป็นความจริง ? <a href="{% url 'person_report' person.id %}"><input type="submit" class="btn btn-danger" id="report_btn" value="Report"></a>
+           <h5>กรณีที่บุคลลนี้ไม่ได้โกงการซื้อ-ขาย จริง สามารถกดปุ่ม Report ด้านล่าง</h5><a href="{% url 'person_report' person.id %}"><input type="submit" class="btn btn-danger" id="report_btn" value="Report"></a>
            {% if person.report_set.count == 0 %}
            <br><p>This person has been reported :  {{ person.report_set.count }} timed.</p>
            {% else %}

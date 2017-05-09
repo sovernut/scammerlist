@@ -15,6 +15,7 @@ class Person(models.Model):
     email = models.CharField(max_length=200)
     mobile_number = models.CharField(max_length=10)
     detail = models.CharField(max_length=400)
+    picture_url = models.CharField(max_length=100,default="https://assets.pcmag.com/media/images/357201-how-to-lock-down-your-facebook-profile.jpg?thumb=y&width=275&height=275")
     last_report_time = models.DateTimeField(default=timezone.now())
     
     def __str__(self):
