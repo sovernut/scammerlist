@@ -40,15 +40,26 @@
     </div>
 
     {# ------ LIST FOR CATALOG ------ #}<br>
-    <h1 align=center>เลือกดูตามประเภทการซื้อ-ขาย</h1>
+    <h1>เลือกดูตามประเภทการซื้อ-ขาย</h1>
     
-    <center>
-    <ul>
-    {% for a in catalog %}
-        <li><a href="list/{{a.id}}">{{ a }}</a></li>
-    {% endfor %}
-    </ul>
-    </center>
+    <div class="row">
+        <div class="col-md-6">
+        <ul class="list-group">
+        {% for a in catalog %}
+            {% if forloop.counter|divisibleby:7 %}
+               </div>
+               <div class="col-md-6">
+            {% endif %}
+            <li  class="list-group-item"> 
+               <a href="list/{{a.id}}">{{ a }} ( {{ a.person_set.count }} )</a>
+            </li>
+        
 
+        {% endfor %}
+        </ul>
+        </div>
+
+        
+    </div>
 </div>
 
