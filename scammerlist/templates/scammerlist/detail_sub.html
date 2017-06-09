@@ -36,9 +36,35 @@
            {% if person.report_set.count > 5 %}
            <br><p>บุคคลนี้อาจจะไม่ได้โกง เนื่องมีการ report ทั้งหมด : {{ person.report_set.count }} ครั้ง</p>
            {% endif %}
+		
+		<div class="container">
+		<div class="row">
+		{% for comment in person.report_set.all %}
+			<!--**** startcomment -->
+
+<div class="col-sm-1">
+<div class="thumbnail">
+<img class="img-responsive user-photo" src="https://ssl.gstatic.com/accounts/ui/avatar_2x.png">
+</div><!-- /thumbnail -->
+</div><!-- /col-sm-1 -->
+
+<div class="col-sm-5">
+<div class="panel panel-default">
+<div class="panel-heading">
+<strong>unknown user</strong>
+</div>
+<div class="panel-body">
+{{ comment }}
+</div><!-- /panel-body -->
+</div><!-- /panel panel-default -->
+</div><!-- /col-sm-5 -->
+
+		{% endfor %}
+		</div><!-- /row -->
+		</div><!-- /container -->
+
       </div>
     </div>
-     
 </div>
 
 
