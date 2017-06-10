@@ -5,12 +5,15 @@ from django.http import HttpResponse, HttpResponseRedirect
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.decorators import login_required
 from .models import Person,Catalog,Report
+from django.contrib.auth.models import User
 
 def login_request(request):
+    # if there are username in textbox
     if 'username' in request.POST and 'password' in request.POST:
         username = request.POST['username']
         password = request.POST['password']
         user = authenticate(username=username, password=password)
+        # found username then login
         if user is not None:
             login(request,user)
     next = request.POST.get('next', '/')
@@ -19,7 +22,15 @@ def login_request(request):
 def logout_view(request):
     logout(request)
     return HttpResponseRedirect(reverse('index'))
-		
+    
+def registration(request):
+    username = request.POST.get('username','Unknown')
+    password = request.POST.get('password','Unknown')
+    if 'username' in request.POST and 'password' in request.POST:
+        new_user = User.objects.create_user(username=username,password=password)
+        new_user.save()
+    return render(request, 'scammerlist/registration_complete.html', {'username':username})
+    
 def index(request):
     catalog = Catalog.objects.order_by('-type_cat') 
     return render(request,"scammerlist/index.html",{'catalog':catalog}) 
@@ -32,7 +43,7 @@ def search(request):
         resultsemail = Person.objects.filter(email__contains=getname)
     else:
         catalog = get_object_or_404(Catalog,pk=int(search_cat))
-        results = catalog.person_set.filter(name__contains=getname) # Every person in all catalog
+        results = catalog.person_set.filter(name__contains=getname) # Every person in filtered catalog
         resultsemail = catalog.person_set.filter(email__contains=getname)
         
     result_text = ""
@@ -63,6 +74,7 @@ def personreport(request,person_id):
         return persondetail(request,person_id,loginrequire)
 
 def save_reported(request,person_id):
+    # for saveing report
     report_detail = request.POST['report']
     person = get_object_or_404(Person,pk=person_id)
     report_time = timezone.now()
@@ -74,11 +86,6 @@ def save_reported(request,person_id):
     
 def show_reported(request):
     people = Person.objects.all()
-    '''reported_person = []
-    for person in people:
-        if people.report_set.count() > 0:
-            reported_person += people'''
-
     return render(request,"scammerlist/report_detail.html",{"people":people})
 
     
