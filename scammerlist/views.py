@@ -2,8 +2,24 @@ from django.shortcuts import redirect, render , get_object_or_404
 from django.urls import reverse
 from django.utils import timezone
 from django.http import HttpResponse, HttpResponseRedirect
+from django.contrib.auth import authenticate, login, logout
+from django.contrib.auth.decorators import login_required
 from .models import Person,Catalog,Report
 
+def login_request(request):
+    if 'username' in request.POST and 'password' in request.POST:
+        username = request.POST['username']
+        password = request.POST['password']
+        user = authenticate(username=username, password=password)
+        if user is not None:
+            login(request,user)
+    next = request.POST.get('next', '/')
+    return HttpResponseRedirect(next)
+   
+def logout_view(request):
+    logout(request)
+    return HttpResponseRedirect(reverse('index'))
+		
 def index(request):
     catalog = Catalog.objects.order_by('-type_cat') 
     return render(request,"scammerlist/index.html",{'catalog':catalog}) 
@@ -34,13 +50,17 @@ def listname(request,catalog_id):
     catalog = get_object_or_404(Catalog,pk=catalog_id)
     return render(request,"scammerlist/detail.html",{"catalog":catalog})
     
-def persondetail(request,person_id):
+def persondetail(request,person_id,loginrequire=""):
     person = get_object_or_404(Person,pk=person_id)
-    return render(request,"scammerlist/detail_sub.html",{"person":person})
+    return render(request,"scammerlist/detail_sub.html",{"person":person,"loginrequire":loginrequire})
     
 def personreport(request,person_id):
-    person = get_object_or_404(Person,pk=person_id)
-    return render(request,"scammerlist/report.html",{"person":person})
+    if request.user.is_authenticated:
+        person = get_object_or_404(Person,pk=person_id)
+        return render(request,"scammerlist/report.html",{"person":person})
+    else:
+        loginrequire = "กรุณา login เพื่อทำการ report"
+        return persondetail(request,person_id,loginrequire)
 
 def save_reported(request,person_id):
     report_detail = request.POST['report']
