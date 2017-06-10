@@ -68,7 +68,8 @@ def save_reported(request,person_id):
     report_time = timezone.now()
     person.last_report_time = report_time
     person.save()
-    person.report_set.create(report_detail=report_detail,report_time=report_time)
+    person.report_set.create(report_detail=report_detail,report_time=report_time,
+                             reporter_name=request.user)
     return HttpResponseRedirect(reverse('person_de',kwargs={'person_id':person_id}))
     
 def show_reported(request):
