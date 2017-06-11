@@ -26,10 +26,19 @@ def logout_view(request):
 def registration(request):
     username = request.POST.get('username','Unknown')
     password = request.POST.get('password','Unknown')
+    password1 = request.POST.get('conpassword','Unknown')
+    regis = "Registration incomplete : can not get username or password"
     if 'username' in request.POST and 'password' in request.POST:
-        new_user = User.objects.create_user(username=username,password=password)
-        new_user.save()
-    return render(request, 'scammerlist/registration_complete.html', {'username':username})
+        if password != "" and username != "":
+            if password == password1:
+                new_user = User.objects.create_user(username=username,password=password)
+                new_user.save()
+                regis = "Registration complete !"
+            else:
+                regis = "Registration incomplete : your password doesn't match."
+        else:
+            regis = "Registration incomplete : You've leave a blank username/password."
+    return render(request, 'scammerlist/registration_complete.html', {'username':username,'regis_status':regis})
     
 def index(request):
     catalog = Catalog.objects.order_by('-type_cat') 
