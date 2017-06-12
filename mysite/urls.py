@@ -19,6 +19,8 @@ from django.contrib.staticfiles.urls import staticfiles_urlpatterns # add for st
 
 from scammerlist import views
 
+from django.contrib.auth import views as auth_views # for change user password
+
 urlpatterns = [
     url(r'^$', views.index , name='index'),
     url(r'^search$', views.search, name='search'),
@@ -32,6 +34,7 @@ urlpatterns = [
 	url(r'^login$', views.login_request, name='login'),
     url(r'^logout$', views.logout_view, name='logout'),
     url(r'^register$', views.registration, name='register'),
+    url(r'^password/$', views.change_password, name='changepassword'),
     #url(r'^$', include('scammerlist.urls')),
     url(r'^admin/', admin.site.urls),
 ]

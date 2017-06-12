@@ -6,6 +6,9 @@ from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.decorators import login_required
 from .models import Person,Catalog,Report
 from django.contrib.auth.models import User
+from django.contrib import messages
+from django.contrib.auth import update_session_auth_hash
+from django.contrib.auth.forms import PasswordChangeForm
 
 def login_request(request):
     # if there are username in textbox
@@ -39,6 +42,24 @@ def registration(request):
         else:
             regis = "Registration incomplete : You've leave a blank username/password."
     return render(request, 'scammerlist/registration_complete.html', {'username':username,'regis_status':regis})
+    
+
+def change_password(request):
+    if request.method == 'POST':
+        form = PasswordChangeForm(request.user, request.POST)
+        if form.is_valid():
+            user = form.save()
+            update_session_auth_hash(request, user)  # Important!
+            messages.success(request, 'Your password was successfully updated!')
+            return render(request, 'scammerlist/registration_complete.html', 
+                        {'username':request.user,'regis_status':'Change password successfully'})
+        else:
+            messages.error(request, 'Please correct the error below.')
+    else:
+        form = PasswordChangeForm(request.user)
+    return render(request, 'scammerlist/change_password.html', {
+        'form': form
+    })
     
 def index(request):
     catalog = Catalog.objects.order_by('-type_cat') 

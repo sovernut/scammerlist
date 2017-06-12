@@ -19,7 +19,7 @@
 	<ul class="nav navbar-nav navbar-right">
 	  {% if user.is_authenticated %}
 	  <li><a>Hello {{ user }}</a></li>
-	  <li><a href="#" data-toggle="modal" data-target="#myModalRegister"><span class="glyphicon glyphicon-book"></span> Book</a></li>
+	  <li><a href="{% url 'changepassword' %}"><span class="glyphicon glyphicon-cog"></span> Change Password</a></li>
 	  <li><a href="{% url 'logout' %}"><span class="glyphicon glyphicon-off"></span> Logout</a></li>
 	  {% else %}
 	  <li><a href="#" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-user"></span> Login</a></li>
@@ -99,4 +99,5 @@
 
   </div>
 </div>
+
 {% endblock %}
