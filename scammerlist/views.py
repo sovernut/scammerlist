@@ -34,9 +34,12 @@ def registration(request):
     if 'username' in request.POST and 'password' in request.POST:
         if password != "" and username != "":
             if password == password1:
-                new_user = User.objects.create_user(username=username,password=password)
-                new_user.save()
-                regis = "Registration complete !"
+                if len(password) >= 8:
+                    new_user = User.objects.create_user(username=username,password=password)
+                    new_user.save()
+                    regis = "Registration complete !"
+                else:
+                    regis = "Your password length must be 8 or more."
             else:
                 regis = "Registration incomplete : your password doesn't match."
         else:
