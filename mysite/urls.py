@@ -35,6 +35,7 @@ urlpatterns = [
     url(r'^logout$', views.logout_view, name='logout'),
     url(r'^register$', views.registration, name='register'),
     url(r'^password/$', views.change_password, name='changepassword'),
+    url(r'^theme/$', views.change_theme, name='change_theme'),
     #url(r'^$', include('scammerlist.urls')),
     url(r'^admin/', admin.site.urls),
 ]
