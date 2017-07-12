@@ -138,11 +138,12 @@ def listname(request,catalog_id):
 def persondetail(request,person_id,loginrequire=""):
     theme = request.session.get('theme',"css/bootstrap.min.css")
     person = get_object_or_404(Person,pk=person_id)
-    bookmark = Bookmark.objects.filter(user=request.user)
     bookmark_check = 0
-    if bookmark:
-        if person in bookmark[0].person.all():
-            bookmark_check = 1
+    if request.user.is_authenticated():
+        bookmark = Bookmark.objects.filter(user=request.user)
+        if bookmark:
+            if person in bookmark[0].person.all():
+                bookmark_check = 1
     return render(request,"scammerlist/detail_sub.html",{"person":person, 
                                                         "loginrequire":loginrequire,
                                                         'theme':theme,
