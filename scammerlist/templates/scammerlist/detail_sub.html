@@ -16,10 +16,12 @@
     
     <div class="card-block">
         <a href="{% url 'listname' person.catalog.id %}"><h4 class="card-title">from catalog : {{ person.catalog }}</h4></a>
-        {% if not bookmark_check %}
-        <a href="{% url 'bookmarkFunction' person.id "add" %}"><span class="glyphicon glyphicon-bookmark"></span> Bookmarks</a>
-        {% else %}
-        <a href="{% url 'bookmarkFunction' person.id "remove"%}"><span class="glyphicon glyphicon-bookmark"></span> Remove from Bookmark </a>
+        {% if user.is_authenticated %}
+            {% if not bookmark_check %}
+            <a href="{% url 'bookmarkFunction' person.id "add" %}"><span class="glyphicon glyphicon-bookmark"></span> Bookmarks</a>
+            {% else %}
+            <a href="{% url 'bookmarkFunction' person.id "remove"%}"><span class="glyphicon glyphicon-bookmark"></span> Remove from Bookmark </a>
+            {% endif %}
         {% endif %}
         <p class="card-text">
           <img src="{{ person.picture_url }}" width="100px" height="100
