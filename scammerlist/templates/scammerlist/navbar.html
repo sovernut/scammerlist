@@ -18,6 +18,7 @@
 	<ul class="nav navbar-nav navbar-right">
 	  {% if user.is_authenticated %}
 	  <li><a>Hello {{ user }}</a></li>
+      <li><a href="{% url 'bookmarkpage' %}"><span class="glyphicon glyphicon-bookmark"></span> Bookmarks</a></li>
 	  <li><a href="{% url 'changepassword' %}"><span class="glyphicon glyphicon-cog"></span> Change Password</a></li>
 	  <li><a href="{% url 'logout' %}"><span class="glyphicon glyphicon-off"></span> Logout</a></li>
 	  {% else %}
@@ -25,7 +26,7 @@
 	  <li><a href="#" data-toggle="modal" data-target="#myModalRegister"><span class="glyphicon glyphicon-pencil"></span> Register</a></li>
 	  {% endif %}
       <li class="dropdown">
-        <a class="dropdown-toggle" data-toggle="dropdown" href="#">ChangeTheme
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Theme
         <span class="caret"></span></a>
         <ul class="dropdown-menu">
           <li><a href="{% url 'change_theme' %}?theme=black" >Black</a></li>

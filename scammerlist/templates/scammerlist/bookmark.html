@@ -1,0 +1,46 @@
+{% load static %}
+{% static "" as path %}
+<head>
+<title>Scammer List</title>
+<link rel="stylesheet" href="{{ path }}{{ theme }}" />
+</head>
+
+<!-- **************START NAVBAR************** -->
+    {% block content %}
+        {% include 'scammerlist/navbar.html' %}
+    {% endblock %}
+<!-- **************STOP NAVBAR************** -->
+
+<div class="container">
+<h2>{{ user }}'s Bookmarks</h2>
+{% if bookmark.count > 0 %}
+{# show all name #}
+    <table class="table" id="table_list">
+      <thead class="thead-inverse">
+        <tr>
+          <th>NAME ( หรือ username)</th>
+          <th>EMAIL</th>
+          <th>DETAIL</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+
+        {% for b in bookmark %}
+            <tr>
+              <td><a href="{% url 'person_de' b.id %}">{{ b.name }}</a></td>
+              <td>{{ b.email }}</td>
+              <td>{{ b.detail|linebreaks }}</td>
+              <td><a href="{% url 'bookmarkFunction' b.id "remove" %}">Remove</a></td>
+            </tr>
+        {% endfor %}
+
+
+      </tbody>
+    </table>
+{% else %}
+    <h1>There's no person in your bookmark.</h1>
+{% endif %}
+</div>
+
+

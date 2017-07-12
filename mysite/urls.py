@@ -36,6 +36,8 @@ urlpatterns = [
     url(r'^register$', views.registration, name='register'),
     url(r'^password/$', views.change_password, name='changepassword'),
     url(r'^theme/$', views.change_theme, name='change_theme'),
+    url(r'^bookmarkAdd/(?P<person_id>[0-9]+)/(?P<option>[a-z]+)$', views.bookmark, name='bookmarkFunction'),
+    url(r'^bookmark/$', views.bookmarkpage, name='bookmarkpage'),
     #url(r'^$', include('scammerlist.urls')),
     url(r'^admin/', admin.site.urls),
 ]

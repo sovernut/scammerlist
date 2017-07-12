@@ -4,7 +4,7 @@ from django.utils import timezone
 from django.http import HttpResponse, HttpResponseRedirect
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.decorators import login_required
-from .models import Person,Catalog,Report
+from .models import Person,Catalog,Report,Bookmark
 from django.contrib.auth.models import User
 from django.contrib import messages
 from django.contrib.auth import update_session_auth_hash
@@ -75,6 +75,32 @@ def change_theme(request):
     elif theme == "untitle":
         request.session['theme'] = "css/bootstrap.min.untitle.css"
     return HttpResponseRedirect(reverse('index'))
+
+@login_required
+def bookmark(request,person_id,option):
+    user = request.user
+    person = get_object_or_404(Person,pk=person_id)
+    bookmark = Bookmark.objects.filter(user=request.user)
+    if bookmark:
+        if option=="add":
+            bookmark[0].person.add(person)
+        else:
+            bookmark[0].person.remove(person)
+    else:
+        new_bookmark = Bookmark(user=user)
+        new_bookmark.save()
+        new_bookmark.person.add(person)
+    return HttpResponseRedirect(reverse('bookmarkpage'))
+    
+@login_required
+def bookmarkpage(request):
+    theme = request.session.get('theme',"css/bootstrap.min.css")
+    bookmark = Bookmark.objects.filter(user=request.user)
+    if bookmark:
+        personset = bookmark[0].person.all()
+    else:
+        personset = None
+    return render(request,"scammerlist/bookmark.html",{'theme':theme,'bookmark':personset}) 
     
 def index(request):
     theme = request.session.get('theme',"css/bootstrap.min.css")
@@ -112,9 +138,15 @@ def listname(request,catalog_id):
 def persondetail(request,person_id,loginrequire=""):
     theme = request.session.get('theme',"css/bootstrap.min.css")
     person = get_object_or_404(Person,pk=person_id)
+    bookmark = Bookmark.objects.filter(user=request.user)
+    bookmark_check = 0
+    if bookmark:
+        if person in bookmark[0].person.all():
+            bookmark_check = 1
     return render(request,"scammerlist/detail_sub.html",{"person":person, 
                                                         "loginrequire":loginrequire,
-                                                        'theme':theme})
+                                                        'theme':theme,
+                                                        'bookmark_check':bookmark_check})
     
 def personreport(request,person_id):
     theme = request.session.get('theme',"css/bootstrap.min.css")
@@ -141,7 +173,6 @@ def show_reported(request):
     people = Person.objects.all()
     return render(request,"scammerlist/report_detail.html",{"people":people, 'theme':theme})
 
-    
 def addperson(request):
     theme = request.session.get('theme',"css/bootstrap.min.css")
     catalog_all = Catalog.objects.order_by('-type_cat')

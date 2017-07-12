@@ -4,7 +4,6 @@ from django.contrib.auth.models import User
 
 # Create your models here.
 
-
 class Catalog(models.Model):
     type_cat = models.CharField(max_length=200)
 
@@ -31,3 +30,7 @@ class Report(models.Model):
     
     def __str__(self):
         return self.report_detail
+
+class Bookmark(models.Model):
+    user = models.OneToOneField(User)
+    person = models.ManyToManyField(Person)
